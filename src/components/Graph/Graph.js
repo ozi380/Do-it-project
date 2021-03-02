@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 const Graph = () => {
   return (
     <>
-      <h1>Graph component</h1>;
+      <h1>Graph component</h1>
     </>
   );
 };

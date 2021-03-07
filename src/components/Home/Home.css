@@ -1,4 +1,7 @@
 .homePage {
   text-align: center;
   background-color: red;
+  width: 45%;
+  margin-left: 30%;
+  font-size: xx-large;
 }

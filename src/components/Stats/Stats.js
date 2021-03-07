@@ -1,9 +1,14 @@
 import React, { Fragment } from "react";
-const Stats = () => {
+import "./Stats.css";
+
+const Stats = (props) => {
+  const { dailyAvg, weeklyAvg, busyHour } = props;
   return (
-    <>
-      <h1>Stats component</h1>
-    </>
+    <div className="stats">
+      <h3>{`ממוצע יומי: ${dailyAvg}`}</h3>
+      <h3>{`השעה העמוסה ביותר: ${busyHour}`}</h3>
+      <h3> {`ממוצע שבועי : ${weeklyAvg}`}</h3>
+    </div>
   );
 };
 export default Stats;

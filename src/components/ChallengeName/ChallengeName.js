@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import "./ChallengeName.css";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -23,8 +24,14 @@ const ChallengeName = (props) => {
   console.log(challengeName);
   const classes = useStyles();
   return edit ? (
-    <div className={classes.root} noValidate autoComplete="off">
+    <div
+      className={classes.root}
+      id="challengeName"
+      noValidate
+      autoComplete="off"
+    >
       <TextField
+        required={true}
         id="outlined-basic"
         label={!challengeName ? " בחר שם לאתגר החדש שלך" : challengeName}
         variant="outlined"
@@ -37,7 +44,9 @@ const ChallengeName = (props) => {
   ) : (
     <div>
       {" "}
-      <h1 onClick={localSetEdit}>{challengeName}</h1>
+      <div className="title" onClick={localSetEdit}>
+        {challengeName}
+      </div>
       {/* <button onClick={setEditFunc}>ערוך</button> */}
     </div>
   );

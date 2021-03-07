@@ -6,6 +6,9 @@ import Dashboard1 from "./components/Dashboard1/Dashboard1";
 
 const App = () => {
   const [challengeName, setChallengeName] = useState(null);
+  const [dailyAvg, setDailyAvg] = useState(2);
+  const [weekklyAvg, setWeeklyAvg] = useState(3);
+  const [busyHour, setBusyHour] = useState(4);
   const [edit, setEdit] = useState(true);
   const setEditFunc = () => setEdit(!edit);
 
@@ -32,9 +35,12 @@ const App = () => {
               challengeName={challengeName}
               edit={edit}
               setEditFunc={setEditFunc}
+              dailyAvg={dailyAvg}
+              weeklyAvg={weekklyAvg}
+              busyHour={busyHour}
             />
           </Route>
-          <Route path="/" component={Home}>
+          <Route path="/">
             <Home challengeName={challengeName} />
           </Route>
         </Switch>

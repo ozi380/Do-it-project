@@ -5,7 +5,15 @@ import Stats from "../Stats/Stats";
 import ResetButton from "../ResetButton/ResetButton";
 import "./Dashboard1.css";
 const Dashboard1 = (props) => {
-  const { setChallengeName, challengeName, edit, setEditFunc } = props;
+  const {
+    setChallengeName,
+    challengeName,
+    edit,
+    setEditFunc,
+    dailyAvg,
+    weeklyAvg,
+    busyHour,
+  } = props;
   // const [challengeName, setChallengeName] = useState(null);
   // console.log(challengeName);
   return (
@@ -18,7 +26,7 @@ const Dashboard1 = (props) => {
       />
       <h1>נתונים שעתיים של השבוע האחרון</h1>
       <Graph />
-      <Stats />
+      <Stats dailyAvg={dailyAvg} weeklyAvg={weeklyAvg} busyHour={busyHour} />
       <ResetButton />
     </div>
   );

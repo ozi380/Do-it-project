@@ -24,7 +24,7 @@ const Dashboard1 = (props) => {
         edit={edit}
         setEditFunc={setEditFunc}
       />
-      <h1>נתונים שעתיים של השבוע האחרון</h1>
+      <h1 className="statsTitle">נתונים שעתיים של השבוע האחרון</h1>
       <Graph />
       <Stats dailyAvg={dailyAvg} weeklyAvg={weeklyAvg} busyHour={busyHour} />
       <ResetButton />

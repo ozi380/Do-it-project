@@ -6,7 +6,7 @@ import Dashboard1 from "./components/Dashboard1/Dashboard1";
 
 const App = () => {
   const [challengeName, setChallengeName] = useState(null);
-  const [dailyAvg, setDailyAvg] = useState(2);
+  const [dailyAvg, setDailyAvg] = useState((2 + 6 + 8 + 9 + 7 + 4) / 6);
   const [weekklyAvg, setWeeklyAvg] = useState(3);
   const [busyHour, setBusyHour] = useState(4);
   const [edit, setEdit] = useState(true);

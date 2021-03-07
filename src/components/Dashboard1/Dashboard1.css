@@ -2,3 +2,7 @@
   text-align: center;
   border: 5px solid red;
 }
+.statsTitle {
+  font-size: large;
+  color: blue;
+}

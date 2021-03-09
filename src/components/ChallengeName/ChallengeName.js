@@ -21,7 +21,6 @@ const ChallengeName = (props) => {
   };
   const localSetEdit = () => setEditFunc();
 
-  console.log(challengeName);
   const classes = useStyles();
   return edit ? (
     <div
